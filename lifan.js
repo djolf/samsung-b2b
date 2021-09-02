@@ -1,11 +1,27 @@
 $(document).ready(function () {
   const mainCarousel = $("#mainCarousel");
+  const subCarousel = $("#subCarousel");
   const mainCarouselItems = $(".main-carousel-item");
+  const indicators = $(".carousel-indicators > li");
   let currentPageIndex;
+
+  //set current page index
   mainCarouselItems.each((index, item) => {
     if ($(item).hasClass("active")) currentPageIndex = index;
   });
-  console.log("currentPageIndex", currentPageIndex);
+
+  //initialise carousels
+  subCarousel.slick({
+    autoplay: currentPageIndex === 0 ? true : false,
+    // autoplay: false,
+    autoplaySpeed: 2000,
+    draggable: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    centerMode: false,
+  });
+  console.log(subCarousel.slick("getSlick"));
 
   mainCarousel.slick({
     autoplay: currentPageIndex === 0 ? false : true,
@@ -15,11 +31,35 @@ $(document).ready(function () {
     nextArrow:
       '<button type="button" class="slick-next carousel-control-next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>',
     initialSlide: currentPageIndex,
+    draggable: false,
   });
 
-  mainCarousel.on("afterChange", (event, slick, currentSlide) => {
-    console.log(currentSlide);
-    if (currentSlide === 0) mainCarousel.slick("slickPause");
-    else if (currentSlide === 1) mainCarousel.slick("slickPlay");
+  mainCarousel.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
+    if ($(event.target).is("#mainCarousel")) {
+      highlightIndicator(nextSlide);
+      if (nextSlide === 0) {
+        mainCarousel.slick("slickPause");
+        subCarousel.slick("slickPlay");
+      } else {
+        mainCarousel.slick("slickPlay");
+        subCarousel.slick("slickPause");
+      }
+    }
   });
+
+  indicators.on("click", (e) => {
+    const targetSlide = $(e.target).data("slideTo");
+    mainCarousel.slick("slickGoTo", targetSlide);
+  });
+
+  const highlightIndicator = (current) => {
+    indicators.each((index, item) => {
+      const $item = $(item);
+      if ($item.hasClass("active") && index !== current) {
+        $item.removeClass("active");
+      } else if (index === current && !$item.hasClass("active")) {
+        $item.addClass("active");
+      }
+    });
+  };
 });

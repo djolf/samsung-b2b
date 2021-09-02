@@ -73,7 +73,7 @@
 .carousel-section {
   background-color: #000;
   position: relative;
-  padding-bottom: 2em;
+  padding-bottom: 3em;
 }
 .main-container {
   background-color: #fff;
@@ -1093,3 +1093,32 @@ vertical-align: middle;*/
 .overflow-x-hidden {
   overflow-x: hidden !important;
 }
+
+.carousel-section .carousel-indicators {
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+#subCarousel .slide-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+/* #subCarousel .slide-container .right {
+  display: none;
+}
+
+@media screen and (min-width: 992px) {
+  #subCarousel .slide-container .right {
+    display: flex;
+  }
+} */
+
+/* .slick-track {
+  display: flex !important;
+}
+
+.slick-slide {
+  height: inherit !important;
+} */

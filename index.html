@@ -64,7 +64,7 @@
       </div>
       <!--carousel indicators -->
       <ul class="carousel-indicators text-center mt-1 mb-1 pb-3">
-        <li data-target="#myCarousel" class="active"><a href="index.html" style="color:#fff;text-decoration:none;">Overview</a></li>
+        <li data-target="#myCarousel" class="active" data-slide-to="0">Overview</li>
         <li data-target="#myCarousel" data-slide-to="1">Distributed Workforce</li>
         <li data-target="#myCarousel" data-slide-to="2">Field Workers</li>
         <li data-target="#myCarousel" data-slide-to="3">Retail</li>
@@ -75,26 +75,24 @@
       <div id="mainCarousel" >
         <div class="main-carousel-item active">
           <div id="subCarousel">
-            <div class="container border-bx">
-              <div class="row">
-                <div class="col-lg-6">
-                  <a href="index.html" id="01_carousel-slide_distributed-work_image"><img src="images/carousel-healthcare.png" class="img-fluid"></a>
-                </div>      
-                <div class="col-lg-5 align-self-center">
-                  <img src="images/carousel-overview2.png" class="img-fluid d-none d-sm-block d-sm-none d-md-none d-lg-block">
-                </div>       
-              </div> <!-- end div row-->
-            </div><!-- end container-->
-            <div class="container border-bx">
-              <div class="row">
-                <div class="col-lg-6">
-                  <a href="index.html" id="01_carousel-slide_distributed-work_image"><img src="images/carousel-healthcare.png" class="img-fluid"></a>
-                </div>      
-                <div class="col-lg-5 align-self-center">
-                  <img src="images/carousel-overview2.png" class="img-fluid d-none d-sm-block d-sm-none d-md-none d-lg-block">
-                </div>       
-              </div> <!-- end div row-->
-            </div><!-- end container-->
+            <div class="slide-container">
+              <div class="left">
+                <img src="images/carousel-healthcare.png" class="img-fluid d-none d-lg-block">
+                <img src="images/mobile-carousel-image/overview1.png" class="img-fluid d-lg-none">
+              </div>
+              <div class="right d-none d-lg-flex">
+                <img src="images/carousel-overview2.png" class="img-fluid">
+              </div>
+            </div>      
+            <div class="slide-container">
+              <div class="left">
+                <img src="images/carousel-healthcare.png" class="img-fluid d-none d-lg-block">
+                <img src="images/mobile-carousel-image/overview1.png" class="img-fluid d-lg-none">
+              </div>
+              <div class="right d-none d-lg-flex">
+                <img src="images/carousel-overview2.png" class="img-fluid">
+              </div>
+            </div>      
           </div>
        </div><!-- end carousel item -->
 
@@ -349,9 +347,11 @@
                 <h3 class="animated fadeIn">Business solutions at a glance</h3>
               </div>
             </div>
+          </div>
+          <div class="container">
             <!-- first row of icons -->
-            <div class="row border-between pt-3 d-flex justify-content-center">
-              <div class="col-lg-3 text-center animatedParent">
+            <div class="row pt-3 d-flex justify-content-center">
+              <div class="col-lg-4 col-sm-6 col-xs-12 p-0 text-center animatedParent">
                 <img
                   src="images/icon-distributed.png"
                   class="img-fluid animated fadeIn icon-img pb-1 delay-200"
@@ -362,20 +362,20 @@
                   >
                 </p>
               </div>
-              <div class="col-lg-4 text-center animatedParent">
+              <div class="col-lg-4 col-sm-6 col-xs-12 p-0 text-center animatedParent">
                 <!-- hidden in xs, sm, md -->
                 <img
                   src="images/bar-vertical.jpg"
-                  class="d-none d-lg-block d-xl-none d-none d-xl-block float-left"
+                  class="d-none d-lg-block d-xl-block float-left"
                 />
                 <!-- end hidden in xs, sm, md -->
                 <!-- hidden in large, xl -->
-                <br class="d-block d-sm-none d-none d-sm-block d-md-none" />
+                <br class="d-block d-sm-none" />
                 <img
                   src="images/bar-horizontal.jpg"
-                  class="block-center d-block d-sm-none d-none d-sm-block d-md-none"
+                  class="block-center d-block d-sm-none"
                 />
-                <br class="d-block d-sm-none d-none d-sm-block d-md-none" />
+                <br class="d-block d-sm-none" />
                 <!-- end hidden in large, xl -->
                 <a href="field_workers_v4.html"
                   ><img
@@ -387,7 +387,7 @@
                   <a href="field_workers.html">Field<br />Workers</a>
                 </p>
               </div>
-              <div class="col-lg-3 text-center animatedParent">
+              <div class="col-lg-4 col-sm-6 col-xs-12 p-0 text-center animatedParent">
                 <!-- hidden in xs, sm, md -->
                 <img
                   src="images/bar-vertical.jpg"
@@ -395,12 +395,12 @@
                 />
                 <!-- end hidden in xs, sm, md -->
                 <!-- hidden in large, xl -->
-                <br class="d-block d-sm-none d-none d-sm-block d-md-none" />
+                <br class="d-block d-sm-none" />
                 <img
                   src="images/bar-horizontal.jpg"
-                  class="block-center d-block d-sm-none d-none d-sm-block d-md-none"
+                  class="block-center d-block d-sm-none"
                 />
-                <br class="d-block d-sm-none d-none d-sm-block d-md-none" />
+                <br class="d-block d-sm-none" />
                 <!-- end hidden in large, xl -->
                 <img
                   src="images/icon-retail.png"
@@ -409,18 +409,17 @@
                 />
                 <p class="icon-img-title"><a href="retail.html">Retail</a></p>
               </div>
-            </div>
-            <!-- end first row -->
+              <!-- end first row -->
             <!-- second row of icons -->
-            <div class="row pt-5 icon-second-row d-flex justify-content-center">
-              <div class="col-lg-3 text-center animatedParent">
+            <!-- <div class="row pt-5 icon-second-row d-flex justify-content-center"> -->
+              <div class="col-lg-4 col-sm-6 col-xs-12 p-0 text-center animatedParent">
                 <!-- hidden in large, xl -->
-                <br class="d-block d-sm-none d-none d-sm-block d-md-none" />
+                <br class="d-block d-sm-none" />
                 <img
                   src="images/bar-horizontal.jpg"
-                  class="block-center d-block d-sm-none d-none d-sm-block d-md-none"
+                  class="block-center d-block d-sm-none"
                 />
-                <br class="d-block d-sm-none d-none d-sm-block d-md-none" />
+                <br class="d-block d-sm-none" />
                 <!-- end hidden in large, xl -->
                 <img
                   src="images/icon-healthcare.png"
@@ -430,7 +429,7 @@
                   <a href="healthcare.html">Healthcare</a>
                 </p>
               </div>
-              <div class="col-lg-4 text-center animatedParent">
+              <div class="col-lg-4 col-sm-6 col-xs-12 p-0 text-center animatedParent">
                 <!-- hidden in xs, sm, md -->
                 <img
                   src="images/bar-vertical.jpg"
@@ -438,12 +437,12 @@
                 />
                 <!-- end hidden in xs, sm, md -->
                 <!-- hidden in large, xl -->
-                <br class="d-block d-sm-none d-none d-sm-block d-md-none" />
+                <br class="d-block d-sm-none" />
                 <img
                   src="images/bar-horizontal.jpg"
-                  class="block-center d-block d-sm-none d-none d-sm-block d-md-none"
+                  class="block-center d-block d-sm-none"
                 />
-                <br class="d-block d-sm-none d-none d-sm-block d-md-none" />
+                <br class="d-block d-sm-none" />
                 <!-- end hidden in large, xl -->
                 <img
                   src="images/icon-education.png"
@@ -454,7 +453,7 @@
                   <a href="education.html">Education</a>
                 </p>
               </div>
-              <div class="col-lg-3 text-center animatedParent">
+              <div class="col-lg-4 col-sm-6 col-xs-12 p-0 text-center animatedParent">
                 <!-- hidden in xs, sm, md -->
                 <img
                   src="images/bar-vertical.jpg"
@@ -462,13 +461,13 @@
                 />
                 <!-- end hidden in xs, sm, md -->
                 <!-- hidden in large, xl -->
-                <br class="d-block d-sm-none d-none d-sm-block d-md-none" />
+                <br class="d-block d-sm-none" />
                 <img
                   src="images/bar-horizontal.jpg"
-                  class="block-center d-block d-sm-none d-none d-sm-block d-md-none"
+                  class="block-center d-block d-sm-none"
                 />
                 <br
-                  class="d-block d-sm-none d-none d-sm-block d-md-none pb-1"
+                  class="d-block d-sm-none pb-1"
                 />
                 <!-- end hidden in large, xl -->
                 <img
@@ -480,7 +479,7 @@
                   <a href="logistics.html">Transport<br />&amp; Logistics</a>
                 </p>
               </div>
-            </div>
+            <!-- </div> -->
             <!-- end second row-->
           </div>
           <!-- end container biz-glance -->
