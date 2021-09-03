@@ -3,6 +3,8 @@ $(document).ready(function () {
   const subCarousel = $("#subCarousel");
   const mainCarouselItems = $(".main-carousel-item");
   const indicators = $(".carousel-indicators > li");
+  const mobileIndicators = $(".carousel-section .dropdown-item");
+
   let currentPageIndex;
 
   //set current page index
@@ -19,9 +21,8 @@ $(document).ready(function () {
     arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
-    centerMode: false,
+    adaptiveHeight: true,
   });
-  console.log(subCarousel.slick("getSlick"));
 
   mainCarousel.slick({
     autoplay: currentPageIndex === 0 ? false : true,
@@ -48,6 +49,11 @@ $(document).ready(function () {
   });
 
   indicators.on("click", (e) => {
+    const targetSlide = $(e.target).data("slideTo");
+    mainCarousel.slick("slickGoTo", targetSlide);
+  });
+
+  mobileIndicators.on("click", (e) => {
     const targetSlide = $(e.target).data("slideTo");
     mainCarousel.slick("slickGoTo", targetSlide);
   });

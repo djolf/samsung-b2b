@@ -1122,3 +1122,19 @@ vertical-align: middle;*/
 .slick-slide {
   height: inherit !important;
 } */
+
+.carousel-dropdown {
+  color: white;
+  cursor: pointer;
+  padding: 1em 1.5em;
+  position: absolute;
+  bottom: 0;
+}
+
+.carousel-section .dropdown-menu {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-section .dropdown-item {
+  color: #eeeeee;
+}
