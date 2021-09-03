@@ -55,6 +55,8 @@ $(document).ready(function () {
 
   mobileIndicators.on("click", (e) => {
     const targetSlide = $(e.target).data("slideTo");
+    // const text = $(e.target).text();
+    // $(".carousel-slide-title").text(text);
     mainCarousel.slick("slickGoTo", targetSlide);
   });
 
@@ -65,6 +67,7 @@ $(document).ready(function () {
         $item.removeClass("active");
       } else if (index === current && !$item.hasClass("active")) {
         $item.addClass("active");
+        $(".carousel-slide-title").text($item.text());
       }
     });
   };

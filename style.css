@@ -1138,3 +1138,13 @@ vertical-align: middle;*/
 .carousel-section .dropdown-item {
   color: #eeeeee;
 }
+
+.carousel-section .carousel-slide-title {
+  font-size: 1.5em;
+  color: #eee;
+  font-weight: bold;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
