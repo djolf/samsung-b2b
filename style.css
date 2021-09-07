@@ -50,6 +50,7 @@
 
 .bizsol-title {
   font-size: 2.5rem;
+  width: 75%;
 }
 
 .userinfo img {
@@ -473,7 +474,7 @@ vertical-align: middle;*/
 }
 
 /***** Tabbed area CSS ******/
-.tabbed-area {
+/* .tabbed-area {
   background-color: #fff;
   font-family: "SamsungOne";
 }
@@ -527,7 +528,7 @@ vertical-align: middle;*/
 }
 .image-tab6 {
   height: 60%;
-}
+} */
 
 /**Business solutions css**/
 .biz-solutions {
@@ -1157,18 +1158,6 @@ vertical-align: middle;*/
   white-space: nowrap;
 }
 
-.slick-track {
-  display: flex !important;
-}
-
-.slick-slide {
-  height: inherit !important;
-}
-
-.slick-slider {
-  height: 100% !important;
-}
-
 .main-carousel-item {
   color: white;
 }
@@ -1177,4 +1166,42 @@ vertical-align: middle;*/
   display: flex;
   width: 80% !important;
   margin: 0 auto;
+}
+
+.tabbed-area {
+  background: #fff;
+  font-family: "SamsungOne";
+}
+
+.tabbed-area p {
+  color: #808080;
+}
+
+.tabbed-area img {
+  width: 100%;
+  height: auto;
+}
+
+.tabbed-img {
+  width: 100%;
+  min-width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.delay-600 {
+  -webkit-animation-delay: 0.6s;
+  -moz-animation-delay: 0.6s;
+  -o-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+.tabbed-area p {
+  font-size: 1.5rem;
 }

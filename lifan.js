@@ -12,10 +12,19 @@ $(document).ready(function () {
     if ($(item).hasClass("active")) currentPageIndex = index;
   });
 
+  mainCarousel.on("init", (event, slick) => {
+    if ($(event.target).is("#mainCarousel")) {
+      const height = $(mainCarousel).height();
+      $(subCarousel)
+        .find(".slick-list, .slick-track, .slick-slide")
+        .height(height);
+    }
+  });
+
   //initialise carousels
   subCarousel.slick({
-    // autoplay: currentPageIndex === 0 ? true : false,
-    autoplay: false,
+    autoplay: currentPageIndex === 0 ? true : false,
+    // autoplay: false,
     autoplaySpeed: 2000,
     draggable: false,
     arrows: false,
@@ -25,8 +34,8 @@ $(document).ready(function () {
   });
 
   mainCarousel.slick({
-    // autoplay: currentPageIndex === 0 ? false : true,
-    autoplay: false,
+    autoplay: currentPageIndex === 0 ? false : true,
+    // autoplay: false,
     autoplaySpeed: 5000,
     prevArrow:
       '<button type="button" class="slick-prev carousel-control-prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>"',
