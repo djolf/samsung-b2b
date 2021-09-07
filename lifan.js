@@ -34,8 +34,8 @@ $(document).ready(function () {
   });
 
   mainCarousel.slick({
-    autoplay: currentPageIndex === 0 ? false : true,
-    // autoplay: false,
+    // autoplay: currentPageIndex === 0 ? false : true,
+    autoplay: false,
     autoplaySpeed: 5000,
     prevArrow:
       '<button type="button" class="slick-prev carousel-control-prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>"',

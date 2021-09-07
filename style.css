@@ -388,14 +388,14 @@ vertical-align: middle;*/
 .btn-sm {
   padding: 0.5rem 1rem !important;
 }
-.biz-glance .download-para {
+.download-para {
   font-family: "SamsungOne", Arial, Helvetica, sans-serif;
   color: #fff;
   font-weight: bold;
   font-size: 1rem !important;
 }
 
-.biz-glance .download-para a {
+.download-para a {
   color: #fff;
   text-decoration: none;
 }
