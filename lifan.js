@@ -34,7 +34,6 @@ $(document).ready(function () {
   });
 
   mainCarousel.slick({
-    // autoplay: currentPageIndex === 0 ? false : true,
     autoplay: false,
     autoplaySpeed: 5000,
     prevArrow:
@@ -43,6 +42,11 @@ $(document).ready(function () {
       '<button type="button" class="slick-next carousel-control-next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>',
     initialSlide: currentPageIndex,
     draggable: false,
+  });
+
+  $(window).resize(function () {
+    mainCarousel.slick("refresh");
+    subCarousel.slick("refresh");
   });
 
   mainCarousel.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
@@ -65,8 +69,6 @@ $(document).ready(function () {
 
   mobileIndicators.on("click", (e) => {
     const targetSlide = $(e.target).data("slideTo");
-    // const text = $(e.target).text();
-    // $(".carousel-slide-title").text(text);
     mainCarousel.slick("slickGoTo", targetSlide);
   });
 
