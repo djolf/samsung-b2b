@@ -21,19 +21,7 @@ $(document).ready(function () {
     }
   });
 
-  //initialise carousels
-  subCarousel.slick({
-    autoplay: currentPageIndex === 0 ? true : false,
-    // autoplay: false,
-    autoplaySpeed: 2000,
-    draggable: false,
-    arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
-  });
-
-  mainCarousel.slick({
+  const mainCarouselOptions = {
     autoplay: false,
     autoplaySpeed: 5000,
     prevArrow:
@@ -42,17 +30,37 @@ $(document).ready(function () {
       '<button type="button" class="slick-next carousel-control-next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>',
     initialSlide: currentPageIndex,
     draggable: false,
-  });
+  };
 
-  $(window).resize(function () {
+  const subCarouselOptions = {
+    // autoplay: currentPageIndex === 0 ? true : false,
+    autoplay: false,
+    autoplaySpeed: 2000,
+    draggable: false,
+    arrows: false,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    adaptiveHeight: true,
+    touchMove: false,
+  };
+
+  //initialise carousels
+  subCarousel.slick(subCarouselOptions);
+
+  mainCarousel.slick(mainCarouselOptions);
+
+  $(window).on("resize", function () {
     mainCarousel.slick("refresh");
-    subCarousel.slick("refresh");
   });
 
   mainCarousel.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
     if ($(event.target).is("#mainCarousel")) {
       highlightIndicator(nextSlide);
       if (nextSlide === 0) {
+        const height = $(mainCarousel).height();
+        $(subCarousel)
+          .find(".slick-list, .slick-track, .slick-slide")
+          .height(height);
         mainCarousel.slick("slickPause");
         subCarousel.slick("slickPlay");
       } else {
