@@ -4,6 +4,7 @@ $(document).ready(function () {
   const mainCarouselItems = $(".main-carousel-item");
   const indicators = $(".carousel-indicators > li");
   const mobileIndicators = $(".carousel-section .dropdown-item");
+  let userInteracted = false;
 
   let currentPageIndex;
 
@@ -22,7 +23,7 @@ $(document).ready(function () {
   });
 
   const mainCarouselOptions = {
-    autoplay: false,
+    autoplay: currentPageIndex === 0 ? false : true,
     autoplaySpeed: 5000,
     prevArrow:
       '<button type="button" class="slick-prev carousel-control-prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>"',
@@ -64,6 +65,9 @@ $(document).ready(function () {
         mainCarousel.slick("slickPause");
         subCarousel.slick("slickPlay");
       } else {
+        if (userInteracted) {
+          mainCarousel.slick("slickPause");
+        }
         mainCarousel.slick("slickPlay");
         subCarousel.slick("slickPause");
       }
@@ -71,13 +75,19 @@ $(document).ready(function () {
   });
 
   indicators.on("click", (e) => {
+    userInteracted = true;
     const targetSlide = $(e.target).data("slideTo");
     mainCarousel.slick("slickGoTo", targetSlide);
   });
 
   mobileIndicators.on("click", (e) => {
+    userInteracted = true;
     const targetSlide = $(e.target).data("slideTo");
     mainCarousel.slick("slickGoTo", targetSlide);
+  });
+
+  $(".slick-next, .slick-prev").on("click", (e) => {
+    userInteracted = true;
   });
 
   const highlightIndicator = (current) => {
