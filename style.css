@@ -1209,3 +1209,62 @@ vertical-align: middle;*/
 .mobile-tech-disclaimer {
   color: black;
 }
+
+#productCarousel {
+  /* max-width: 100vw; */
+  width: 100%;
+  /* overflow: hidden; */
+}
+
+#productCarousel .product-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#productCarousel .product-name {
+  color: white;
+  font-size: 1.3rem;
+  text-align: center;
+}
+
+/* #productCarousel + .product-arrows-row {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 3rem;
+}
+
+#productCarousel +  .product-arrows-row .product-arrow {
+  height: 2px;
+  background: #ddd;
+  width: 100px;
+} */
+
+.slick-dots li {
+  color: transparent;
+  background: #aaa;
+  border: 0;
+  height: 4px;
+  flex: 1;
+  outline: 0;
+}
+
+.slick-dots button {
+  color: transparent;
+  -webkit-appearance: none;
+}
+
+ul.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin: 2rem auto;
+  width: 50%;
+  max-width: 500px;
+}
+
+.slick-dots .slick-active {
+  background: white;
+}

@@ -4,6 +4,8 @@ $(document).ready(function () {
   const mainCarouselItems = $(".main-carousel-item");
   const indicators = $(".carousel-indicators > li");
   const mobileIndicators = $(".carousel-section .dropdown-item");
+  const productCarousel = $("#productCarousel");
+
   let userInteracted = false;
 
   let currentPageIndex;
@@ -45,35 +47,43 @@ $(document).ready(function () {
     touchMove: false,
   };
 
+  const productCarouselOptions = {
+    autoplay: true,
+    autoplaySpeed: 5000,
+    draggable: false,
+    mobileFirst: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    arrows: false,
+    dots: true,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        }
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        }
+      },
+    ],
+  };
+
   //initialise carousels
   subCarousel.slick(subCarouselOptions);
 
   mainCarousel.slick(mainCarouselOptions);
 
+  productCarousel.slick(productCarouselOptions);
+
   $(window).on("resize", function () {
     mainCarousel.slick("refresh");
   });
-
-  mainCarousel.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
-    if ($(event.target).is("#mainCarousel")) {
-      highlightIndicator(nextSlide);
-      if (nextSlide === 0) {
-        const height = $(mainCarousel).height();
-        $(subCarousel)
-          .find(".slick-list, .slick-track, .slick-slide")
-          .height(height);
-        mainCarousel.slick("slickPause");
-        subCarousel.slick("slickPlay");
-      } else {
-        if (userInteracted) {
-          mainCarousel.slick("slickPause");
-        }
-        mainCarousel.slick("slickPlay");
-        subCarousel.slick("slickPause");
-      }
-    }
-  });
-
   indicators.on("click", (e) => {
     userInteracted = true;
     const targetSlide = $(e.target).data("slideTo");
@@ -90,15 +100,38 @@ $(document).ready(function () {
     userInteracted = true;
   });
 
+  mainCarousel.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
+    if ($(event.target).is("#mainCarousel")) {
+      highlightIndicator(nextSlide);
+      if (nextSlide === 0) {
+        const height = $(mainCarousel).height();
+        $(subCarousel)
+          .find(".slick-list, .slick-track, .slick-slide")
+          .height(height);
+        mainCarousel.slick("slickPause");
+        subCarousel.slick("slickPlay");
+      } else {
+        if (userInteracted) {
+          mainCarousel.slick("slickPause");
+        } else {
+          mainCarousel.slick("slickPlay");
+          subCarousel.slick("slickPause");
+        }
+      }
+    }
+  });
+
   const highlightIndicator = (current) => {
     indicators.each((index, item) => {
       const $item = $(item);
       if ($item.hasClass("active") && index !== current) {
         $item.removeClass("active");
-      } else if (index === current && !$item.hasClass("active")) {
-        $item.addClass("active");
+      } else if (index === current) {
+        if (!$item.hasClass("active")) $item.addClass("active");
         $(".carousel-slide-title").text($item.text());
       }
     });
   };
+
+  highlightIndicator(currentPageIndex);
 });
