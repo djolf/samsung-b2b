@@ -157,8 +157,8 @@ $(document).ready(function () {
       subCarousel.slick("refresh");
       myCarousel.carousel('pause');
     } else {
-      myCarousel.carousel('pause');
-      // myCarousel.carousel('cycle');
+      // myCarousel.carousel('pause');
+      myCarousel.carousel('cycle');
     }
   })
 
