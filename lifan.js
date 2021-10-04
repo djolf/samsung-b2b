@@ -1,10 +1,11 @@
 $(document).ready(function () {
   const mainCarousel = $("#mainCarousel");
   const subCarousel = $("#subCarousel");
-  const mainCarouselItems = $(".main-carousel-item");
+  const mainCarouselItems = $(".carousel-item");
   const indicators = $(".carousel-indicators > li");
   const mobileIndicators = $(".carousel-section .dropdown-item");
   const productCarousel = $("#productCarousel");
+  const myCarousel = $("#myCarousel")
 
   let userInteracted = false;
 
@@ -36,15 +37,30 @@ $(document).ready(function () {
   };
 
   const subCarouselOptions = {
-    // autoplay: currentPageIndex === 0 ? true : false,
-    autoplay: false,
+    autoplay: currentPageIndex === 0 ? true : false,
+    // autoplay: false,
     autoplaySpeed: 2000,
     draggable: false,
     arrows: false,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
+    slidesToShow: 2,
+    slidesToScroll: 2,
     touchMove: false,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        }
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        }
+      },
+    ]
   };
 
   const productCarouselOptions = {
@@ -82,7 +98,7 @@ $(document).ready(function () {
   productCarousel.slick(productCarouselOptions);
 
   $(window).on("resize", function () {
-    mainCarousel.slick("refresh");
+    subCarousel.slick("refresh");
   });
   indicators.on("click", (e) => {
     userInteracted = true;
@@ -134,4 +150,19 @@ $(document).ready(function () {
   };
 
   highlightIndicator(currentPageIndex);
+
+  myCarousel.on("slid.bs.carousel", (event) => {
+    highlightIndicator(event.to);
+    if (event.to === 0) {
+      subCarousel.slick("refresh");
+      myCarousel.carousel('pause');
+    } else {
+      myCarousel.carousel('pause');
+      // myCarousel.carousel('cycle');
+    }
+  })
+
+  myCarousel.carousel({
+    interval: 5000,
+  })
 });

@@ -26,9 +26,7 @@
   
     /***** END BOOTSTRAP.MIN.CSS ******/
   
-    /** CAROUSEL CSS **/
-    .carousel{margin-bottom:4rem}.carousel-caption{bottom:3rem;z-index:10}.carousel-item{height:32rem}.carousel-item>img{position:absolute;top:0;left:0;min-width:100%;height:32rem}.marketing .col-lg-4{margin-bottom:1.5rem;text-align:center}.marketing h2{font-weight:400}.marketing .col-lg-4 p{margin-right:.75rem;margin-left:.75rem}.featurette-divider{margin:5rem 0}.featurette-heading{font-weight:300;line-height:1;letter-spacing:-.05rem}@media (min-width:40em){.carousel-caption p{margin-bottom:1.25rem;font-size:1.25rem;line-height:1.4}.featurette-heading{font-size:50px}}@media (min-width:62em){.featurette-heading{margin-top:7rem}}
-    /** END CAROUSEL CSS**/
+  
   
   
   
@@ -59,465 +57,438 @@
 
   <body class="mx-0 mt-0">
     <section class="carousel-section">
-      <div class="headliner text-center ie-marginbottom mb-2">
-        <h2 class="navbar-h2 px-2">Redefining the workplace of tomorrow</h2>
-      </div>
-      <!--carousel indicators -->
-      <ul
-        class="carousel-indicators d-none d-lg-flex text-center mt-1 mb-1 pb-3"
-      >
-        <li data-target class="active" data-slide-to="0">Overview</li>
-        <li data-target data-slide-to="1">Distributed Workforce</li>
-        <li data-target data-slide-to="2">Field Workers</li>
-        <li data-target data-slide-to="3">Retail</li>
-        <li data-target data-slide-to="4">Healthcare</li>
-        <li data-target data-slide-to="5">Education</li>
-        <li data-target data-slide-to="6">Transport &amp; Logistics</li>
-      </ul>
-      <ul class="dropdown-menu d-lg-none" aria-labelledby="dropdownMenuButton">
-        <li data-slide-to="0" class="dropdown-item">Overview</li>
-        <li data-slide-to="1" class="dropdown-item">Distributed Workforce</li>
-        <li data-slide-to="2" class="dropdown-item">Field Workers</li>
-        <li data-slide-to="3" class="dropdown-item">Retail</li>
-        <li data-slide-to="4" class="dropdown-item">Healthcare</li>
-        <li data-slide-to="5" class="dropdown-item">Education</li>
-        <li data-slide-to="6" class="dropdown-item">
-          Transport &amp; Logistics
-        </li>
-      </ul>
-      <button
-        class="carousel-slide-title d-lg-none dropdown-toggle"
-        type="button"
-        id="dropdownMenuButton"
-        data-toggle="dropdown"
-        aria-haspopup="true"
-        aria-expanded="false"
-      ></button>
-      <div id="mainCarousel">
-        <div class="main-carousel-item active">
-          <div id="subCarousel">
-            <div class="slide-container">
-              <div class="left">
-                <img
-                  src="images/carousel-healthcare.png"
-                  class="img-fluid d-none d-lg-block"
-                />
-                <img
-                  src="images/mobile-carousel-image/overview1.png"
-                  class="img-fluid d-lg-none"
-                />
+      <div id="myCarousel" class="carousel slide">
+        <div class="headliner text-center ie-marginbottom mb-3">
+          <h2 class="navbar-h2 px-2">Redefining the workplace of tomorrow</h2>
+        </div>
+        <!--carousel indicators -->
+        <ul
+          class="carousel-indicators d-none d-lg-flex text-center mt-1 mb-3"
+        >
+          <li data-target="#myCarousel" class="active" data-slide-to="0">Overview</li>
+          <li data-target="#myCarousel" data-slide-to="1">Distributed Workforce</li>
+          <li data-target="#myCarousel" data-slide-to="2">Field Workers</li>
+          <li data-target="#myCarousel" data-slide-to="3">Retail</li>
+          <li data-target="#myCarousel" data-slide-to="4">Healthcare</li>
+          <li data-target="#myCarousel" data-slide-to="5">Education</li>
+          <li data-target="#myCarousel" data-slide-to="6">Transport &amp; Logistics</li>
+        </ul>
+        <ul class="dropdown-menu d-lg-none" aria-labelledby="dropdownMenuButton">
+          <li data-target="#myCarousel" data-slide-to="0" class="dropdown-item">Overview</li>
+          <li data-target="#myCarousel" data-slide-to="1" class="dropdown-item">Distributed Workforce</li>
+          <li data-target="#myCarousel" data-slide-to="2" class="dropdown-item">Field Workers</li>
+          <li data-target="#myCarousel" data-slide-to="3" class="dropdown-item">Retail</li>
+          <li data-target="#myCarousel" data-slide-to="4" class="dropdown-item">Healthcare</li>
+          <li data-target="#myCarousel" data-slide-to="5" class="dropdown-item">Education</li>
+          <li data-target="#myCarousel" data-slide-to="6" class="dropdown-item">
+            Transport &amp; Logistics
+          </li>
+        </ul>
+        <button
+          class="carousel-slide-title d-lg-none dropdown-toggle"
+          type="button"
+          id="dropdownMenuButton"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        ></button>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div id="subCarousel">
+              <div class="slide-container">
+                <img src="images/new-carousel/distributed.png" alt="">
               </div>
-              <div class="right d-none d-lg-flex">
-                <img src="images/carousel-overview2.png" class="img-fluid" />
+              <div class="slide-container">
+                <img src="images/new-carousel/fieldworker.png" alt="">
               </div>
-            </div>
-            <div class="slide-container">
-              <div class="left">
-                <img
-                  src="images/carousel-healthcare.png"
-                  class="img-fluid d-none d-lg-block"
-                />
-                <img
-                  src="images/mobile-carousel-image/overview1.png"
-                  class="img-fluid d-lg-none"
-                />
+              <div class="slide-container">
+                <img src="images/new-carousel/retail.png" alt="">
               </div>
-              <div class="right d-none d-lg-flex">
-                <img src="images/carousel-overview2.png" class="img-fluid" />
+              <div class="slide-container">
+                <img src="images/new-carousel/healthcare.png" alt="">
+              </div>
+              <div class="slide-container">
+                <img src="images/new-carousel/education.png" alt="">
+              </div>
+              <div class="slide-container">
+                <img src="images/new-carousel/transport.png" alt="">
               </div>
             </div>
           </div>
-        </div>
-        <!-- end carousel item -->
-
-        <div class="main-carousel-item">
-          <div class="container-fluid border-bx">
-            <div class="row no-gutters">
-              <div
-                class="
-                  offset-lg-1
-                  col-lg-5
-                  mx-md-5 mx-sm-3 mx-1
-                  mr-lg-0
-                  ml-lg-auto
-                "
-              >
-                <a
-                  href="distributed_workforce.html"
-                  id="01_carousel-slide_field-workers_image"
-                  class="d-flex justify-content-end"
-                  ><img src="images/carousel-distributed.png" class="img-fluid"
-                /></a>
-                <!-- <p class="mobile-carousel-header mb-1 d-block d-sm-none d-none d-md-block d-lg-none">Embrace hybrid workplaces with open arms</p>
-              <p class="mobile-carousel-text d-block d-sm-none d-none d-md-block d-lg-none">Whether it's remote work or office-based, developing the capability  to allow your employees to work anytime, anywhere will ensure that your business stays future-ready.</p>
-              <p class="mt-2 mb-2 d-block d-sm-none d-none d-md-block d-lg-none">
-                <a href="distributed_workforce.html" class="cta cta--contained cta--white"  id="01_carousel-slide_distributed-work_cta">Learn more</a> 
-                <a href="#buynow" class="cta cta--contained cta--white"  id="02_carousel-slide_distributed-work_cta">Buy now</a></p> -->
-              </div>
-              <div
-                class="
-                  col-lg-5
-                  text-left
-                  caption-fw
-                  align-self-center
-                  mx-lg-0 mx-md-5 mx-sm-3 mx-1
-                  mr-lg-auto
-                "
-              >
-                <h2 class="">Embrace hybrid workplaces with open arms</h2>
-                <p class="carousel-text-p">
-                  Whether it's remote work or office-based, developing the
-                  capability to allow your employees to work anytime, anywhere
-                  will ensure that your business stays future-ready.
-                </p>
-                <p class="">
+          <!-- end carousel item -->
+  
+          <div class="carousel-item">
+            <div class="container-fluid border-bx">
+              <div class="row">
+                <div
+                  class="
+                    offset-lg-1
+                    col-lg-5
+                    mx-md-5 mx-sm-3 mx-1
+                    mr-lg-0
+                    ml-lg-auto
+                    mb-3 mb-lg-0
+                  "
+                >
                   <a
                     href="distributed_workforce.html"
-                    class="text-center cta cta--contained cta--white"
-                    id="01_carousel-slide_distributed-work_cta"
-                    >Learn more</a
-                  >
-                  <a
-                    href="#buynow"
-                    class="text-center cta cta--contained cta--white width-20"
-                    id="01_carousel-slide_distributed-work_cta"
-                    >Buy now</a
-                  >
-                </p>
+                    id="01_carousel-slide_field-workers_image"
+                    class="d-flex justify-content-end"
+                    ><img src="images/new-carousel/distributed.png" class="img-fluid"
+                  /></a>
+                </div>
+                <div
+                  class="
+                    col-lg-5
+                    text-left
+                    caption-fw
+                    align-self-center
+                    mx-lg-0 mx-md-5 mx-sm-3 mx-1
+                    mr-lg-auto
+                  "
+                >
+                  <h2 class="">Embrace hybrid workplaces with open arms</h2>
+                  <p class="carousel-text-p">
+                    Whether it's remote work or office-based, developing the
+                    capability to allow your employees to work anytime, anywhere
+                    will ensure that your business stays future-ready.
+                  </p>
+                  <p class="">
+                    <a
+                      href="distributed_workforce.html"
+                      class="text-center cta cta--contained cta--white"
+                      id="01_carousel-slide_distributed-work_cta"
+                      >Learn more</a
+                    >
+                    <a
+                      href="#buynow"
+                      class="text-center cta cta--contained cta--white width-20"
+                      id="01_carousel-slide_distributed-work_cta"
+                      >Buy now</a
+                    >
+                  </p>
+                </div>
               </div>
+              <!-- end div row-->
             </div>
-            <!-- end div row-->
+            <!-- end container-->
           </div>
-          <!-- end container-->
-        </div>
-        <!-- end carousel item -->
-
-        <div class="main-carousel-item">
-          <div class="container-fluid border-bx">
-            <div class="row no-gutters">
-              <div
-                class="
-                  offset-lg-1
-                  col-lg-5
-                  mx-md-5 mx-sm-3 mx-1
-                  mr-lg-0
-                  ml-lg-auto
-                "
-              >
-                <a
-                  href="field_workers.html"
-                  id="01_carousel-slide_field-workers_image"
-                  class="d-flex justify-content-end"
-                  ><img
-                    src="images/carousel-fieldworkers.png"
-                    class="img-fluid"
-                /></a>
-                <!-- <p class="mobile-carousel-header mb-1 d-block d-sm-none d-none d-md-block d-lg-none">Enhance field service capability to unleash enterprise growth</p>
-              <p class="mobile-carousel-text d-block d-sm-none d-none d-md-block d-lg-none">With the ever-changing environment, equipping your field services team with secured solutions and rugged mobile devices are utmost important for them to do their job remotely and effectively.</p>
-              <p class="mt-2 mb-2 d-block d-sm-none d-none d-md-block d-lg-none">
-                <a href="field_workers.html" class="text-center cta cta--contained cta--white"  id="02_carousel-slide_field-workers_cta">Learn more</a>&nbsp;&nbsp;<a href="#buynow" class="text-center cta cta--contained cta--white"  id="02_carousel-slide_field-workers_cta">Buy now</a></p> -->
-              </div>
-              <div
-                class="
-                  col-lg-5
-                  text-left
-                  caption-fw
-                  align-self-center
-                  mx-lg-0 mx-md-5 mx-sm-3 mx-1
-                  mr-lg-auto
-                "
-              >
-                <h2 class="">
-                  Enhance field service capability to unleash enterprise growth
-                </h2>
-                <p class="carousel-text-p">
-                  With the ever-changing environment, equipping your field
-                  services team with secured solutions and rugged mobile devices
-                  are utmost important for them to do their job remotely and
-                  effectively.
-                </p>
-                <p class="">
+          <!-- end carousel item -->
+  
+          <div class="carousel-item">
+            <div class="container-fluid border-bx">
+              <div class="row">
+                <div
+                  class="
+                    offset-lg-1
+                    col-lg-5
+                    mx-md-5 mx-sm-3 mx-1
+                    mr-lg-0
+                    ml-lg-auto
+                    mb-3 mb-lg-0
+                  "
+                >
                   <a
                     href="field_workers.html"
-                    class="text-center cta cta--contained cta--white width-20"
-                    id="01_carousel-slide_field-workers_cta"
-                    >Learn more</a
-                  >
-                  <a
-                    href="#buynow"
-                    class="text-center cta cta--contained cta--white width-20"
-                    id="01_carousel-slide_field-workers_cta"
-                    >Buy now</a
-                  >
-                </p>
+                    id="01_carousel-slide_field-workers_image"
+                    class="d-flex justify-content-end"
+                    ><img
+                      src="images/new-carousel/fieldworker.png"
+                      class="img-fluid"
+                  /></a>
+                </div>
+                <div
+                  class="
+                    col-lg-5
+                    text-left
+                    caption-fw
+                    align-self-center
+                    mx-lg-0 mx-md-5 mx-sm-3 mx-1
+                    mr-lg-auto
+                  "
+                >
+                  <h2 class="">
+                    Enhance field service capability to unleash enterprise growth
+                  </h2>
+                  <p class="carousel-text-p">
+                    With the ever-changing environment, equipping your field
+                    services team with secured solutions and rugged mobile devices
+                    are utmost important for them to do their job remotely and
+                    effectively.
+                  </p>
+                  <p class="">
+                    <a
+                      href="field_workers.html"
+                      class="text-center cta cta--contained cta--white width-20"
+                      id="01_carousel-slide_field-workers_cta"
+                      >Learn more</a
+                    >
+                    <a
+                      href="#buynow"
+                      class="text-center cta cta--contained cta--white width-20"
+                      id="01_carousel-slide_field-workers_cta"
+                      >Buy now</a
+                    >
+                  </p>
+                </div>
               </div>
+              <!-- end div row-->
             </div>
-            <!-- end div row-->
+            <!-- end container-->
           </div>
-          <!-- end container-->
-        </div>
-        <!-- end carousel item -->
-
-        <div class="main-carousel-item">
-          <div class="container-fluid border-bx">
-            <div class="row no-gutters">
-              <div
-                class="
-                  offset-lg-1
-                  col-lg-5
-                  mx-md-5 mx-sm-3 mx-1
-                  mr-lg-0
-                  ml-lg-auto
-                "
-              >
-                <a
-                  href="retail.html"
-                  id="01_carousel-slide_retail_image"
-                  class="d-flex justify-content-end"
-                  ><img src="images/carousel-retail.png" class="img-fluid"
-                /></a>
-                <!-- <p class="mobile-carousel-header mb-1 d-block d-sm-none d-none d-md-block d-lg-none">Safe and contactless retail experience at every touchpoint</p>
-              <p class="mobile-carousel-text d-block d-sm-none d-none d-md-block d-lg-none">From right-sizing your sales channels to reshaping the retail experience around customer engagement, leveraging mobile technology will pave the way to a safe and frictionless shopping journey.</p>
-              <p class="mt-2 mb-2 d-block d-sm-none d-none d-md-block d-lg-none">
-                <a href="retail.html" class="text-center cta cta--contained cta--white"  id="03_carousel-slide_retail_cta">Learn more</a>
-                <a href="#buynow" class="text-center cta cta--contained cta--white"  id="03_carousel-slide_retail_cta">Buy now</a></p>
-              </p> -->
-              </div>
-              <div
-                class="
-                  col-lg-5
-                  text-left
-                  caption-fw
-                  align-self-center
-                  mx-lg-0 mx-md-5 mx-sm-3 mx-1
-                  mr-lg-auto
-                "
-              >
-                <h2 class="">
-                  Safe and contactless retail experience at every touchpoint
-                </h2>
-                <p class="carousel-text-p">
-                  From right-sizing your sales channels to reshaping the retail
-                  experience around customer engagement, leveraging mobile
-                  technology will pave the way to a safe and frictionless
-                  shopping journey.
-                </p>
-                <p class="">
+          <!-- end carousel item -->
+  
+          <div class="carousel-item">
+            <div class="container-fluid border-bx">
+              <div class="row">
+                <div
+                  class="
+                    offset-lg-1
+                    col-lg-5
+                    mx-md-5 mx-sm-3 mx-1
+                    mr-lg-0
+                    ml-lg-auto
+                    mb-3 mb-lg-0
+                  "
+                >
                   <a
                     href="retail.html"
-                    class="text-center cta cta--contained cta--white width-20"
-                    id="01_carousel-slide_retail_cta"
-                    >Learn more</a
-                  >
-                  <a
-                    href="#buynow"
-                    class="text-center cta cta--contained cta--white width-20"
-                    id="01_carousel-slide_retail_cta"
-                    >Buy now</a
-                  >
-                </p>
+                    id="01_carousel-slide_retail_image"
+                    class="d-flex justify-content-end"
+                    ><img src="images/new-carousel/retail.png" class="img-fluid"
+                  /></a>
+                </div>
+                <div
+                  class="
+                    col-lg-5
+                    text-left
+                    caption-fw
+                    align-self-center
+                    mx-lg-0 mx-md-5 mx-sm-3 mx-1
+                    mr-lg-auto
+                  "
+                >
+                  <h2 class="">
+                    Safe and contactless retail experience at every touchpoint
+                  </h2>
+                  <p class="carousel-text-p">
+                    From right-sizing your sales channels to reshaping the retail
+                    experience around customer engagement, leveraging mobile
+                    technology will pave the way to a safe and frictionless
+                    shopping journey.
+                  </p>
+                  <p class="">
+                    <a
+                      href="retail.html"
+                      class="text-center cta cta--contained cta--white width-20"
+                      id="01_carousel-slide_retail_cta"
+                      >Learn more</a
+                    >
+                    <a
+                      href="#buynow"
+                      class="text-center cta cta--contained cta--white width-20"
+                      id="01_carousel-slide_retail_cta"
+                      >Buy now</a
+                    >
+                  </p>
+                </div>
               </div>
+              <!-- end div row-->
             </div>
-            <!-- end div row-->
+            <!-- end container-->
           </div>
-          <!-- end container-->
-        </div>
-        <!-- end carousel item -->
-
-        <div class="main-carousel-item">
-          <div class="container-fluid border-bx">
-            <div class="row no-gutters">
-              <div
-                class="
-                  offset-lg-1
-                  col-lg-5
-                  mx-md-5 mx-sm-3 mx-1
-                  mr-lg-0
-                  ml-lg-auto
-                "
-              >
-                <a
-                  href="healthcare.html"
-                  id="01_carousel-slide_healthcare_image"
-                  class="d-flex justify-content-end"
-                  ><img src="images/carousel-healthcare.png" class="img-fluid"
-                /></a>
-                <!-- <p class="mobile-carousel-header mb-1 d-block d-sm-none d-none d-md-block d-lg-none">Elevate patient and clinician experience with digital solutions</p>
-              <p class="mobile-carousel-text d-block d-sm-none d-none d-md-block d-lg-none">With the surge in healthcare demand and priority placed on patient’s safety, embracing digital healthcare solutions to provide medical care is more important than ever.</p>
-              <p class="mt-2 mb-2 d-block d-sm-none d-none d-md-block d-lg-none">
-                <a href="healthcare.html" class="text-center cta cta--contained cta--white"  id="01_carousel-slide_healthcare_cta">Learn more</a>
-                <a href="healthcare.html" class="text-center cta cta--contained cta--white"  id="01_carousel-slide_healthcare_cta">Buy now</a>
-              </p> -->
-              </div>
-              <div
-                class="
-                  col-lg-5
-                  text-left
-                  caption-fw
-                  align-self-center
-                  mx-lg-0 mx-md-5 mx-sm-3 mx-1
-                  mr-lg-auto
-                "
-              >
-                <h2 class="">
-                  Elevate patient and clinician experience with digital
-                  solutions
-                </h2>
-                <p class="carousel-text-p">
-                  With the surge in healthcare demand and priority placed on
-                  patient’s safety, embracing digital healthcare solutions to
-                  provide medical care is more important than ever.
-                </p>
-                <p class="">
+          <!-- end carousel item -->
+  
+          <div class="carousel-item">
+            <div class="container-fluid border-bx">
+              <div class="row">
+                <div
+                  class="
+                    offset-lg-1
+                    col-lg-5
+                    mx-md-5 mx-sm-3 mx-1
+                    mr-lg-0
+                    ml-lg-auto
+                    mb-3 mb-lg-0
+                  "
+                >
                   <a
                     href="healthcare.html"
-                    class="text-center cta cta--contained cta--white width-20"
-                    id="01_carousel-slide_healthcare_cta"
-                    >Learn more</a
-                  >
-                  <a
-                    href="#buynow"
-                    class="text-center cta cta--contained cta--white width-20"
-                    id="01_carousel-slide_healthcare_cta"
-                    >Buy now</a
-                  >
-                </p>
+                    id="01_carousel-slide_healthcare_image"
+                    class="d-flex justify-content-end"
+                    ><img src="images/new-carousel/healthcare.png" class="img-fluid"
+                  /></a>
+                </div>
+                <div
+                  class="
+                    col-lg-5
+                    text-left
+                    caption-fw
+                    align-self-center
+                    mx-lg-0 mx-md-5 mx-sm-3 mx-1
+                    mr-lg-auto
+                  "
+                >
+                  <h2 class="">
+                    Elevate patient and clinician experience with digital
+                    solutions
+                  </h2>
+                  <p class="carousel-text-p">
+                    With the surge in healthcare demand and priority placed on
+                    patient’s safety, embracing digital healthcare solutions to
+                    provide medical care is more important than ever.
+                  </p>
+                  <p class="">
+                    <a
+                      href="healthcare.html"
+                      class="text-center cta cta--contained cta--white width-20"
+                      id="01_carousel-slide_healthcare_cta"
+                      >Learn more</a
+                    >
+                    <a
+                      href="#buynow"
+                      class="text-center cta cta--contained cta--white width-20"
+                      id="01_carousel-slide_healthcare_cta"
+                      >Buy now</a
+                    >
+                  </p>
+                </div>
               </div>
+              <!-- end div row-->
             </div>
-            <!-- end div row-->
+            <!-- end container-->
           </div>
-          <!-- end container-->
-        </div>
-        <!-- end carousel item -->
-
-        <div class="main-carousel-item">
-          <div class="container-fluid border-bx">
-            <div class="row no-gutters">
-              <div
-                class="
-                  offset-lg-1
-                  col-lg-5
-                  mx-md-5 mx-sm-3 mx-1
-                  mr-lg-0
-                  ml-lg-auto
-                "
-              >
-                <a
-                  href="education.html"
-                  id="01_carousel-slide_education_image"
-                  class="d-flex justify-content-end"
-                  ><img src="images/carousel-education.png" class="img-fluid"
-                /></a>
-                <!-- <p class="mobile-carousel-header mb-1 d-block d-sm-none d-none d-md-block d-lg-none">Inspiring new ways of digital learning</p>
-              <p class="mobile-carousel-text d-block d-sm-none d-none d-md-block d-lg-none">Now you can go beyond remote learning to increase engagement and strengthen multi-dimensional learning with innovative tools and solutions.</p>
-              <p class="mt-2 mb-2 d-block d-sm-none d-none d-md-block d-lg-none">
-                <a href="education.html" class="text-center cta cta--contained cta--white"  id="05_carousel-slide_education_cta">Learn more</a>
-                <a href="#buynow" class="text-center cta cta--contained cta--white"  id="05_carousel-slide_education_cta">Learn more</a>
-              </p> -->
-              </div>
-              <div
-                class="
-                  col-lg-5
-                  text-left
-                  caption-fw
-                  align-self-center
-                  mx-lg-0 mx-md-5 mx-sm-3 mx-1
-                  mr-lg-auto
-                "
-              >
-                <h2 class="">Inspiring new ways of digital learning</h2>
-                <p class="carousel-text-p">
-                  Now you can go beyond remote learning to increase engagement
-                  and strengthen multi-dimensional learning with innovative
-                  tools and solutions.
-                </p>
-                <p class="">
+          <!-- end carousel item -->
+  
+          <div class="carousel-item">
+            <div class="container-fluid border-bx">
+              <div class="row">
+                <div
+                  class="
+                    offset-lg-1
+                    col-lg-5
+                    mx-md-5 mx-sm-3 mx-1
+                    mr-lg-0
+                    ml-lg-auto
+                    mb-3 mb-lg-0
+                  "
+                >
                   <a
                     href="education.html"
-                    class="text-center cta cta--contained cta--white width-20"
-                    id="01_carousel-slide_education_cta"
-                    >Learn more</a
-                  >
-                  <a
-                    href="#buynnow"
-                    class="text-center cta cta--contained cta--white width-20"
-                    id="01_carousel-slide_education_cta"
-                    >Buy now</a
-                  >
-                </p>
+                    id="01_carousel-slide_education_image"
+                    class="d-flex justify-content-end"
+                    ><img src="images/new-carousel/education.png" class="img-fluid"
+                  /></a>
+                </div>
+                <div
+                  class="
+                    col-lg-5
+                    text-left
+                    caption-fw
+                    align-self-center
+                    mx-lg-0 mx-md-5 mx-sm-3 mx-1
+                    mr-lg-auto
+                  "
+                >
+                  <h2 class="">Inspiring new ways of digital learning</h2>
+                  <p class="carousel-text-p">
+                    Now you can go beyond remote learning to increase engagement
+                    and strengthen multi-dimensional learning with innovative
+                    tools and solutions.
+                  </p>
+                  <p class="">
+                    <a
+                      href="education.html"
+                      class="text-center cta cta--contained cta--white width-20"
+                      id="01_carousel-slide_education_cta"
+                      >Learn more</a
+                    >
+                    <a
+                      href="#buynnow"
+                      class="text-center cta cta--contained cta--white width-20"
+                      id="01_carousel-slide_education_cta"
+                      >Buy now</a
+                    >
+                  </p>
+                </div>
               </div>
+              <!-- end div row-->
             </div>
-            <!-- end div row-->
+            <!-- end container-->
           </div>
-          <!-- end container-->
-        </div>
-        <!-- end carousel item -->
-
-        <div class="main-carousel-item">
-          <div class="container-fluid border-bx">
-            <div class="row no-gutters">
-              <div
-                class="
-                  offset-lg-1
-                  col-lg-5
-                  mx-md-5 mx-sm-3 mx-1
-                  mr-lg-0
-                  ml-lg-auto
-                "
-              >
-                <a
-                  href="logistics.html"
-                  id="01_carousel-slide_logistics_image"
-                  class="d-flex justify-content-end"
-                  ><img src="images/carousel-logistics.png" class="img-fluid"
-                /></a>
-                <!-- <p class="mobile-carousel-header mb-1 d-block d-sm-none d-none d-md-block d-lg-none">Streamline transport and logistics management for impeccable fulfilment</p>
-              <p class="mobile-carousel-text d-block d-sm-none d-none d-md-block d-lg-none">With increased demands to deliver faster and connect better, embracing mobile solutions is critical for improving efficiency and delivering stellar customer service.</p>
-              <p class="mt-2 mb-2 d-block d-sm-none d-none d-md-block d-lg-none">
-                <a href="logistics.html" class="text-center cta cta--contained cta--white"  id="01_carousel-slide_logistics_cta">Learn more</a>
-                <a href="#buynow" class="text-center cta cta--contained cta--white"  id="01_carousel-slide_logistics_cta">Buy now</a>
-              </p> -->
-              </div>
-              <div
-                class="
-                  col-lg-5
-                  text-left
-                  caption-fw
-                  align-self-center
-                  mx-lg-0 mx-md-5 mx-sm-3 mx-1
-                  mr-lg-auto
-                "
-              >
-                <h2 class="">
-                  Streamline transport and logistics management for impeccable
-                  fulfilment
-                </h2>
-                <p class="carousel-text-p">
-                  With increased demands to deliver faster and connect better,
-                  embracing mobile solutions is critical for improving
-                  efficiency and delivering stellar customer service.
-                </p>
-                <p class="">
+          <!-- end carousel item -->
+  
+          <div class="carousel-item">
+            <div class="container-fluid border-bx">
+              <div class="row">
+                <div
+                  class="
+                    offset-lg-1
+                    col-lg-5
+                    mx-md-5 mx-sm-3 mx-1
+                    mr-lg-0
+                    ml-lg-auto
+                    mb-3 mb-lg-0
+                  "
+                >
                   <a
                     href="logistics.html"
-                    class="text-center cta cta--contained cta--white width-20"
-                    id="01_carousel-slide_logistics_cta"
-                    >Learn more</a
-                  >
-                  <a
-                    href="#buynow"
-                    class="text-center cta cta--contained cta--white width-20"
-                    id="01_carousel-slide_logistics_cta"
-                    >Buy now</a
-                  >
-                </p>
+                    id="01_carousel-slide_logistics_image"
+                    class="d-flex justify-content-end"
+                    ><img src="images/new-carousel/transport.png" class="img-fluid"
+                  /></a>
+                </div>
+                <div
+                  class="
+                    col-lg-5
+                    text-left
+                    caption-fw
+                    align-self-center
+                    mx-lg-0 mx-md-5 mx-sm-3 mx-1
+                    mr-lg-auto
+                  "
+                >
+                  <h2 class="">
+                    Streamline transport and logistics management for impeccable
+                    fulfilment
+                  </h2>
+                  <p class="carousel-text-p">
+                    With increased demands to deliver faster and connect better,
+                    embracing mobile solutions is critical for improving
+                    efficiency and delivering stellar customer service.
+                  </p>
+                  <p class="">
+                    <a
+                      href="logistics.html"
+                      class="text-center cta cta--contained cta--white width-20"
+                      id="01_carousel-slide_logistics_cta"
+                      >Learn more</a
+                    >
+                    <a
+                      href="#buynow"
+                      class="text-center cta cta--contained cta--white width-20"
+                      id="01_carousel-slide_logistics_cta"
+                      >Buy now</a
+                    >
+                  </p>
+                </div>
               </div>
+              <!-- end div row-->
             </div>
-            <!-- end div row-->
+            <!-- end container-->
           </div>
-          <!-- end container-->
+          <!-- end carousel item -->
         </div>
-        <!-- end carousel item -->
+        <!-- start carousel prev/next icons-->
+        <button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </button>
+        <!-- end carousel prev/next icons -->
       </div>
     </section>
 
@@ -572,7 +543,7 @@
                 />
               </div>
             </div>
-            <div class="offset-1 col-5 d-flex align-items-end">
+            <div class="col-5 d-flex align-items-center">
               <div class="img-container">
                 <img
                   src="images/tab-4.png"
@@ -580,19 +551,26 @@
                 />
               </div>
             </div>
-            <div class="offset-1 col-2 d-flex align-items-start">
-              <img
-                src="images/tab-5.png"
-                class="img-fluid animated fadeInRight"
-                alt="img"
-              />
+            <div class="col-3 d-flex align-items-center">
+              <div class="d-flex align-items-end">
+                <img
+                  src="images/tab-5.png"
+                  class="img-fluid animated fadeInRight w-50 ml-3"
+                  alt="img"
+                />
+                <img
+                  src="images/tab-6.png"
+                  class="img-fluid animated fadeInRight w-75 ml-3"
+                  alt="img"
+                />
+              </div>
             </div>
           </div>
         </div>
         <div class="tabbed-area d-lg-none">
           <div class="row py-3 no-gutters">
             <div
-              class="col-8 animatedParent d-flex align-items-center"
+              class="col-5 animatedParent d-flex align-items-center"
               data-appear-top-offset="-100"
             >
               <img
@@ -602,12 +580,22 @@
               />
             </div>
             <div
-              class="col-4 animatedParent d-flex align-items-center"
+              class="col-4 animatedParent d-flex align-items-center justify-content-end"
+              data-appear-top-offset="-100"
+            >
+              <img
+                src="images/tab-6.png"
+                class="img-fluid animated fadeInRight w-75"
+                alt="img"
+              />
+            </div>
+            <div
+              class="col-3 animatedParent d-flex align-items-center justify-content-center"
               data-appear-top-offset="-100"
             >
               <img
                 src="images/tab-5.png"
-                class="img-fluid animated fadeInRight"
+                class="img-fluid animated fadeInRight w-60"
                 alt="img"
               />
             </div>
@@ -711,10 +699,12 @@
                 class="col-lg-4 col-6 p-0 pb-3 text-center animatedParent"
                 data-appear-top-offset="-200"
               >
+              <div class="icon-container">
                 <img
                   src="images/icon-distributed.png"
-                  class="img-fluid animated fadeIn icon-img pb-1"
+                  class="img-fluid animated fadeIn pb-1"
                 />
+              </div>
                 <p class="icon-img-title animated fadeIn">
                   <a href="distributed_workforce.html"
                     >Distributed<br />Workforce</a
@@ -745,11 +735,16 @@
                 <br class="d-block d-sm-none" /> -->
                 <!-- end hidden in large, xl -->
                 <a href="field_workers_v4.html"
-                  ><img
-                    src="images/icon-fieldworkers.png"
-                    alt=""
-                    class="img-fluid animated fadeIn icon-img-middle pb-1"
-                /></a>
+                  >
+                  <div class="icon-container">
+                    <img
+                      src="images/icon-fieldworkers.png"
+                      alt=""
+                      class="img-fluid animated fadeIn pb-1"
+                  />
+
+                  </div>
+              </a>
                 <p class="icon-img-title animated fadeIn">
                   <a href="field_workers.html">Field<br />Workers</a>
                 </p>
@@ -777,11 +772,14 @@
                 />
                 <br class="d-block d-sm-none" /> -->
                 <!-- end hidden in large, xl -->
-                <img
-                  src="images/icon-retail.png"
-                  alt=""
-                  class="img-fluid animated fadeIn icon-img pb-1"
-                />
+                <div class="icon-container">
+                  <img
+                    src="images/icon-retail.png"
+                    alt=""
+                    class="img-fluid animated fadeIn pb-1"
+                  />
+
+                </div>
                 <p class="icon-img-title animated fadeIn">
                   <a href="retail.html">Retail</a>
                 </p>
@@ -801,10 +799,13 @@
                 />
                 <br class="d-block d-sm-none" /> -->
                 <!-- end hidden in large, xl -->
-                <img
-                  src="images/icon-healthcare.png"
-                  class="img-fluid animated fadeIn icon-img"
-                />
+                <div class="icon-container">
+                  <img
+                    src="images/icon-healthcare.png"
+                    class="img-fluid animated fadeIn"
+                  />
+
+                </div>
                 <p class="icon-img-title animated fadeIn">
                   <a href="healthcare.html">Healthcare</a>
                 </p>
@@ -832,11 +833,14 @@
                 />
                 <br class="d-block d-sm-none" /> -->
                 <!-- end hidden in large, xl -->
-                <img
-                  src="images/icon-education.png"
-                  alt=""
-                  class="img-fluid animated fadeIn icon-img-middle"
-                />
+                <div class="icon-container">
+                  <img
+                    src="images/icon-education.png"
+                    alt=""
+                    class="img-fluid animated fadeIn"
+                  />
+
+                </div>
                 <p class="icon-img-title animated fadeIn">
                   <a href="education.html">Education</a>
                 </p>
@@ -866,11 +870,14 @@
                   class="d-block d-sm-none pb-1"
                 /> -->
                 <!-- end hidden in large, xl -->
-                <img
-                  src="images/icon-logistics.png"
-                  alt=""
-                  class="img-fluid animated fadeIn icon-img"
-                />
+                <div class="icon-container">
+                  <img
+                    src="images/icon-logistics.png"
+                    alt=""
+                    class="img-fluid animated fadeIn"
+                  />
+
+                </div>
                 <p class="icon-img-title animated fadeIn">
                   <a href="logistics.html">Transport<br />&amp; Logistics</a>
                 </p>

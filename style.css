@@ -74,7 +74,6 @@
 .carousel-section {
   background-color: #000;
   position: relative;
-  padding-bottom: 3em;
 }
 .main-container {
   background-color: #fff;
@@ -115,7 +114,6 @@ vertical-align: middle;*/
 
 /* SECONDARY NAVBAR**/
 .headliner {
-  height: 6rem;
   color: #fff;
   padding-top: 4%;
   box-sizing: border-box;
@@ -155,14 +153,9 @@ vertical-align: middle;*/
 }
 .carousel {
   margin-bottom: 0;
-  height: 40em;
+  padding-bottom: 4rem;
 }
-.carousel-inner {
-  height: 670px;
-}
-.carousel-item {
-  height: 30rem;
-}
+
 .carousel-item img {
   height: auto;
 }
@@ -566,6 +559,20 @@ vertical-align: middle;*/
   color: #000;
 }
 
+.biz-glance .icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 120px;
+  margin: 0 auto;
+}
+
+.biz-glance .icon-container img {
+  max-width: 100%;
+  height: auto;
+}
+
 .biz-table td {
   text-align: center;
 }
@@ -661,15 +668,10 @@ vertical-align: middle;*/
   height: 70%;
 }
 
-.icon-img {
-  width: 50%;
-}
-.icon-img-middle {
-  width: 35%;
-}
 .icon-img-title {
   font-family: "SamsungOne";
   line-height: 1.3rem;
+  font-size: 1.3rem;
 }
 .downloadpdf {
   width: 4%;
@@ -724,17 +726,17 @@ vertical-align: middle;*/
   .biz-title-h3 {
     font-size: 2rem;
   }
-  .carousel {
+  /* .carousel {
     height: 40rem;
-  }
+  } */
 }
 
 /*iPad 3,4, and Pro 9.7 */
 /* Portrait */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  .carousel {
+  /* .carousel {
     height: 50rem;
-  }
+  } */
   .mobile-carousel-header {
     color: #fff;
   }
@@ -744,9 +746,9 @@ vertical-align: middle;*/
 }
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .carousel {
+  /* .carousel {
     height: 30rem;
-  }
+  } */
 }
 
 /* ----------- iPad Pro 12.9" ----------- */
@@ -761,18 +763,18 @@ vertical-align: middle;*/
 /* Declare the same value for min- and max-width to avoid colliding with desktops */
 /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
 @media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  .carousel {
+  /* .carousel {
     height: 40rem;
-  }
+  } */
 }
 
 /* ----------- iPad Pro 10.5" ----------- */
 
 /* Portrait and Landscape */
 @media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
-  .carousel {
+  /* .carousel {
     height: 30rem;
-  }
+  } */
 }
 
 @media screen and (min-width: 576px) and (max-width: 767.98px) {
@@ -920,9 +922,7 @@ vertical-align: middle;*/
   .mobile-pb {
     padding-bottom: 0 !important;
   }
-  .carousel {
-    height: 33rem;
-  }
+
   .carousel-item img {
     height: auto;
   }
@@ -950,6 +950,19 @@ vertical-align: middle;*/
   }
   .biz-title-h4 {
     font-size: 1.06rem;
+  }
+  .biz-glance .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  .icon-img-title {
+    font-family: "SamsungOne";
+    line-height: 1.2rem;
+    font-size: 1.2rem;
   }
 }
 
@@ -1113,6 +1126,11 @@ vertical-align: middle;*/
   justify-content: center;
   margin: auto;
 }
+
+#subCarousel img {
+  max-width: 95%;
+}
+
 /* #subCarousel .slide-container .right {
   display: none;
 }
@@ -1156,6 +1174,7 @@ vertical-align: middle;*/
   left: 50%;
   transform: translateX(-50%);
   white-space: nowrap;
+  z-index: 900;
 }
 
 .main-carousel-item {
@@ -1267,4 +1286,16 @@ ul.slick-dots {
 
 .slick-dots .slick-active {
   background: white;
+}
+
+.w-40 {
+  width: 40% !important;
+}
+
+.w-60 {
+  width: 60% !important;
+}
+
+.slick-track {
+  display: flex;
 }
