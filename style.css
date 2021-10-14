@@ -402,7 +402,7 @@ vertical-align: middle;*/
 .fw-title {
   font-family: "SamsungSharpSans", "SamsungSharpSans-Regular", Arial, Helvetica,
     sans-serif;
-  color: #666666 !important;
+  color: black !important;
   font-size: 1.8rem;
 }
 
@@ -549,7 +549,7 @@ vertical-align: middle;*/
   padding-top: 34px;
   font-family: "SamsungSharpSans", "SamsungSharpSans-Regular";
   text-align: center;
-  color: #808080;
+  color: black;
 }
 
 /*** border for glance icons ****/
@@ -781,6 +781,9 @@ vertical-align: middle;*/
   .bizsol-title {
     font-size: 1.5rem;
   }
+  .carousel-control-next, .carousel-control-prev {
+    display: none;
+  }
 }
 
 /** X-Small devices (portrait phones, less than 576px) **/
@@ -790,7 +793,7 @@ vertical-align: middle;*/
   padding-top:0;
 }*/
   .navbar-h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
   .main-container {
     padding-top: 0;
@@ -926,9 +929,9 @@ vertical-align: middle;*/
   .carousel-item img {
     height: auto;
   }
-  .headliner {
+  /* .headliner {
     height: 4rem;
-  }
+  } */
   .image-mobtech {
     width: 75%;
     text-align: center;
@@ -963,6 +966,10 @@ vertical-align: middle;*/
     font-family: "SamsungOne";
     line-height: 1.2rem;
     font-size: 1.2rem;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    display: none;
   }
 }
 
@@ -1184,7 +1191,7 @@ vertical-align: middle;*/
 #subCarousel {
   display: flex;
   width: 80% !important;
-  margin: 0 auto;
+  margin: 15px auto 0;
 }
 
 .tabbed-area {
@@ -1307,4 +1314,8 @@ ul.slick-dots {
 #myCarousel {
   max-width: 1600px;
   margin: 0 auto;
+}
+
+#myCarousel .carousel-image {
+  margin-top: 15px;
 }
