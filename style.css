@@ -702,361 +702,6 @@ vertical-align: middle;*/
   background-color: #e2e3e5;
 }
 
-@media (min-width: 992px) {
-  .centered-product {
-    font-size: 0.1.5rem;
-  }
-}
-
-/*iPad 1,2, Mini and Air */
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
-  .bd-placeholder-img-lg {
-    font-size: 3.5rem;
-  }
-  .bizsol-title {
-    font-size: 2rem;
-  }
-  .biz-glance h3 {
-    font-size: 2rem;
-  }
-  .fixed-title {
-    font-size: 2rem;
-  }
-  .biz-title-h3 {
-    font-size: 2rem;
-  }
-  /* .carousel {
-    height: 40rem;
-  } */
-}
-
-/*iPad 3,4, and Pro 9.7 */
-/* Portrait */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-  /* .carousel {
-    height: 50rem;
-  } */
-  .mobile-carousel-header {
-    color: #fff;
-  }
-  .mobile-carousel-text {
-    color: #fff;
-  }
-}
-/* Landscape */
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* .carousel {
-    height: 30rem;
-  } */
-}
-
-/* ----------- iPad Pro 12.9" ----------- */
-
-/* Portrait */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
-}
-
-/* Landscape */
-/* Declare the same value for min- and max-width to avoid colliding with desktops */
-/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
-  /* .carousel {
-    height: 40rem;
-  } */
-}
-
-/* ----------- iPad Pro 10.5" ----------- */
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
-  /* .carousel {
-    height: 30rem;
-  } */
-}
-
-@media screen and (min-width: 576px) and (max-width: 767.98px) {
-  .bizsol-title {
-    font-size: 1.5rem;
-  }
-  .carousel-control-next, .carousel-control-prev {
-    display: none;
-  }
-}
-
-/** X-Small devices (portrait phones, less than 576px) **/
-@media (max-width: 575.98px) {
-  /*body {
-  width: 100%;
-  padding-top:0;
-}*/
-  .navbar-h2 {
-    font-size: 1.8rem;
-  }
-  .main-container {
-    padding-top: 0;
-  }
-  .carousel-section {
-    padding-top: 1rem;
-  }
-  .centered {
-    font-size: 1.2rem;
-    margin-top: 15%;
-  }
-  .bizsol-title {
-    font-size: 1.3rem;
-  }
-  .biz-glance h3 {
-    font-size: 1.3rem;
-  }
-  .fixed-title {
-    font-size: 1.3rem;
-  }
-  .biz-title-h3 {
-    font-size: 1.3rem;
-  }
-  .image-tab1 {
-    width: 75%;
-  }
-  .image-tab2 {
-    width: 70%;
-  }
-  .image-tab3 {
-    width: 45%;
-    float: left;
-  }
-  .image-tab6 {
-    height: 55%;
-  }
-
-  .carousel-indicators [data-target] {
-    width: 5rem;
-    font-size: 0.7rem;
-  }
-
-  .mobile-carousel-header {
-    font-family: "SamsungSharpSans";
-    font-size: 0.8rem;
-    color: #fff;
-  }
-  .mobile-carousel-text {
-    font-family: "SamsungOne";
-    font-size: 0.7rem;
-    color: #fff;
-  }
-  .tabbed-1 {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-  }
-  .tabbed-2 {
-    padding-bottom: 0 !important;
-  }
-  .tabbed-3 {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  .tabbed-4 {
-    margin-top: 0%;
-    height: 20rem;
-  }
-  .tabbed-5 {
-    margin-top: 0%;
-  }
-  .tabbed-6 {
-    margin-top: 0%;
-  }
-
-  .biz-solutions {
-    padding-top: 2rem;
-  }
-
-  .innov-title-row {
-    padding-top: 1rem;
-  }
-
-  .centered-product {
-    font-size: 0.8rem;
-  }
-
-  .fw-centered {
-    position: absolute;
-    top: 19% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%);
-  }
-  .fw-title {
-    font-size: 1rem;
-  }
-  .fw-centered p {
-    font-size: 0.7rem;
-  }
-
-  .carousel-indicators {
-    margin-left: 3%;
-    margin-bottom: 8px !important;
-    width: 94%;
-  }
-  .carousel-indicators [data-bs-target] {
-    font-size: 0.7rem;
-    line-height: 0.9rem;
-    border-bottom: none;
-  }
-  .fw-para {
-    text-shadow: 0 1px #fffeef;
-    font-family: "SamsungOne";
-  }
-  .btn-convo {
-    width: auto;
-  }
-  .startconvo-row {
-    padding-top: 0 !important;
-    padding-bottom: 0 !important;
-  }
-
-  .icon-img {
-    width: 35%;
-  }
-  .mobile-pt {
-    padding-top: 0 !important;
-  }
-  .mobile-pb {
-    padding-bottom: 0 !important;
-  }
-
-  .carousel-item img {
-    height: auto;
-  }
-  /* .headliner {
-    height: 4rem;
-  } */
-  .image-mobtech {
-    width: 75%;
-    text-align: center;
-  }
-  .mobile-tech-title {
-    text-align: center;
-  }
-  .image-biz {
-    width: 80%;
-  }
-  .icon-second-row {
-    padding-top: 0 !important;
-  }
-  .biz-title {
-    padding-bottom: 0 !important;
-  }
-  .startconvo-col {
-    margin-top: 1rem !important;
-  }
-  .biz-title-h4 {
-    font-size: 1.06rem;
-  }
-  .biz-glance .icon-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    max-width: 100px;
-    margin: 0 auto;
-  }
-  .icon-img-title {
-    font-family: "SamsungOne";
-    line-height: 1.2rem;
-    font-size: 1.2rem;
-  }
-
-  .carousel-control-next, .carousel-control-prev {
-    display: none;
-  }
-}
-
-/* ----------- iPhone 5, 5S, 5C and 5SE -----------
-
-/* Portrait */
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .carousel {
-    height: 28rem;
-  }
-} */
-
-/* Landscape */
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .carousel {
-    height: 42rem;
-  }
-} */
-
-/**iPhone 6/7/8**/
-
-/* Portrait */
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .carousel {
-    height: 30rem;
-  }
-} */
-
-/* Landscape */
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .carousel {
-    height: 36rem;
-  }
-} */
-
-/**iPhone 6/7/8 Plus**/
-
-/* Portrait */
-/* @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  .carousel {
-    height: 32rem !important;
-  }
-} */
-
-/* Landscape */
-/* @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .carousel {
-    height: 35rem !important;
-  }
-  .carousel-item img {
-    height: 88% !important;
-  }
-} */
-
-/** iPhone X landscape **/
-
-/* Portrait */
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  .carousel {
-    height: 31rem;
-  }
-} */
-
-/* Landscape */
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .carousel {
-    height: 45rem !important;
-  }
-  .mobile-carousel-header {
-    color: #fff;
-  }
-  .mobile-carousel-text {
-    color: #fff;
-  }
-} */
-
-/* ----------- Non-Retina Screens ----------- */
-/* @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-} */
-
-/* ----------- Retina Screens ----------- */
-/* @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  .carousel {
-    height: 38rem;
-  }
-}  */
-
 /**samsung button**/
 .s-btn-encased {
   display: inline-block !important;
@@ -1127,11 +772,20 @@ vertical-align: middle;*/
   margin-right: 15px;
 }
 
-#subCarousel .slide-container {
+#subCarousel .slide-container:nth-child(even) {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
+  margin-left: 0; 
+}
+
+#subCarousel .slide-container:nth-child(odd) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  margin-right: 0;
 }
 
 #subCarousel img {
@@ -1319,3 +973,388 @@ ul.slick-dots {
 #myCarousel .carousel-image {
   margin-top: 15px;
 }
+
+#myCarousel .carousel-image img {
+  height: 300px;
+}
+
+#subCarousel img {
+  height: auto !important;
+  max-height: 300px !important;
+}
+
+@media (min-width: 992px) {
+  .centered-product {
+    font-size: 0.1.5rem;
+  }
+}
+
+/*iPad 1,2, Mini and Air */
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+  .bizsol-title {
+    font-size: 2rem;
+  }
+  .biz-glance h3 {
+    font-size: 2rem;
+  }
+  .fixed-title {
+    font-size: 2rem;
+  }
+  .biz-title-h3 {
+    font-size: 2rem;
+  }
+  /* .carousel {
+    height: 40rem;
+  } */
+}
+
+/*iPad 3,4, and Pro 9.7 */
+/* Portrait */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+  /* .carousel {
+    height: 50rem;
+  } */
+  .mobile-carousel-header {
+    color: #fff;
+  }
+  .mobile-carousel-text {
+    color: #fff;
+  }
+}
+/* Landscape */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* .carousel {
+    height: 30rem;
+  } */
+}
+
+/* ----------- iPad Pro 12.9" ----------- */
+
+/* Portrait */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2) {
+}
+
+/* Landscape */
+/* Declare the same value for min- and max-width to avoid colliding with desktops */
+/* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+@media only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2) {
+  /* .carousel {
+    height: 40rem;
+  } */
+}
+
+/* ----------- iPad Pro 10.5" ----------- */
+
+/* Portrait and Landscape */
+@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
+  /* .carousel {
+    height: 30rem;
+  } */
+}
+
+@media screen and (min-width: 576px) and (max-width: 767.98px) {
+  .bizsol-title {
+    font-size: 1.5rem;
+  }
+  .carousel-control-next, .carousel-control-prev {
+    display: none;
+  }
+  #myCarousel .carousel-item img {
+    height: 330px;
+    margin: auto;
+  }
+
+  #subCarousel .slide-container {
+    margin: auto !important;
+  }
+
+  #myCarousel .carousel-text {
+    height: 180px;
+  }
+}
+
+/** X-Small devices (portrait phones, less than 576px) **/
+@media (max-width: 575.98px) {
+  /*body {
+  width: 100%;
+  padding-top:0;
+}*/
+  .navbar-h2 {
+    font-size: 1.8rem;
+  }
+  .main-container {
+    padding-top: 0;
+  }
+  .carousel-section {
+    padding-top: 1rem;
+  }
+  .centered {
+    font-size: 1.2rem;
+    margin-top: 15%;
+  }
+  .bizsol-title {
+    font-size: 1.3rem;
+  }
+  .biz-glance h3 {
+    font-size: 1.3rem;
+  }
+  .fixed-title {
+    font-size: 1.3rem;
+  }
+  .biz-title-h3 {
+    font-size: 1.3rem;
+  }
+  .image-tab1 {
+    width: 75%;
+  }
+  .image-tab2 {
+    width: 70%;
+  }
+  .image-tab3 {
+    width: 45%;
+    float: left;
+  }
+  .image-tab6 {
+    height: 55%;
+  }
+
+  .carousel-indicators [data-target] {
+    width: 5rem;
+    font-size: 0.7rem;
+  }
+
+  .mobile-carousel-header {
+    font-family: "SamsungSharpSans";
+    font-size: 0.8rem;
+    color: #fff;
+  }
+  .mobile-carousel-text {
+    font-family: "SamsungOne";
+    font-size: 0.7rem;
+    color: #fff;
+  }
+  .tabbed-1 {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+  }
+  .tabbed-2 {
+    padding-bottom: 0 !important;
+  }
+  .tabbed-3 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .tabbed-4 {
+    margin-top: 0%;
+    height: 20rem;
+  }
+  .tabbed-5 {
+    margin-top: 0%;
+  }
+  .tabbed-6 {
+    margin-top: 0%;
+  }
+
+  .biz-solutions {
+    padding-top: 2rem;
+  }
+
+  .innov-title-row {
+    padding-top: 1rem;
+  }
+
+  .centered-product {
+    font-size: 0.8rem;
+  }
+
+  .fw-centered {
+    position: absolute;
+    top: 19% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%);
+  }
+  .fw-title {
+    font-size: 1rem;
+  }
+  .fw-centered p {
+    font-size: 0.7rem;
+  }
+
+  .carousel-indicators {
+    margin-left: 3%;
+    margin-bottom: 8px !important;
+    width: 94%;
+  }
+  .carousel-indicators [data-bs-target] {
+    font-size: 0.7rem;
+    line-height: 0.9rem;
+    border-bottom: none;
+  }
+  .fw-para {
+    text-shadow: 0 1px #fffeef;
+    font-family: "SamsungOne";
+  }
+  .btn-convo {
+    width: auto;
+  }
+  .startconvo-row {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
+
+  .icon-img {
+    width: 35%;
+  }
+  .mobile-pt {
+    padding-top: 0 !important;
+  }
+  .mobile-pb {
+    padding-bottom: 0 !important;
+  }
+
+  #myCarousel .carousel-item img {
+    height: 200px;
+    margin: auto;
+  }
+
+  #myCarousel .carousel-text {
+    height: 300px;
+  }
+  /* .headliner {
+    height: 4rem;
+  } */
+  .image-mobtech {
+    width: 75%;
+    text-align: center;
+  }
+  .mobile-tech-title {
+    text-align: center;
+  }
+  .image-biz {
+    width: 80%;
+  }
+  .icon-second-row {
+    padding-top: 0 !important;
+  }
+  .biz-title {
+    padding-bottom: 0 !important;
+  }
+  .startconvo-col {
+    margin-top: 1rem !important;
+  }
+  .biz-title-h4 {
+    font-size: 1.06rem;
+  }
+  .biz-glance .icon-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 100px;
+    margin: 0 auto;
+  }
+  .icon-img-title {
+    font-family: "SamsungOne";
+    line-height: 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .carousel-control-next, .carousel-control-prev {
+    display: none;
+  }
+
+  #subCarousel .slide-container {
+    margin: auto !important;
+  }
+}
+
+/* ----------- iPhone 5, 5S, 5C and 5SE -----------
+
+/* Portrait */
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .carousel {
+    height: 28rem;
+  }
+} */
+
+/* Landscape */
+/* @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .carousel {
+    height: 42rem;
+  }
+} */
+
+/**iPhone 6/7/8**/
+
+/* Portrait */
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+  .carousel {
+    height: 30rem;
+  }
+} */
+
+/* Landscape */
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
+  .carousel {
+    height: 36rem;
+  }
+} */
+
+/**iPhone 6/7/8 Plus**/
+
+/* Portrait */
+/* @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .carousel {
+    height: 32rem !important;
+  }
+} */
+
+/* Landscape */
+/* @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .carousel {
+    height: 35rem !important;
+  }
+  .carousel-item img {
+    height: 88% !important;
+  }
+} */
+
+/** iPhone X landscape **/
+
+/* Portrait */
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
+  .carousel {
+    height: 31rem;
+  }
+} */
+
+/* Landscape */
+/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
+  .carousel {
+    height: 45rem !important;
+  }
+  .mobile-carousel-header {
+    color: #fff;
+  }
+  .mobile-carousel-text {
+    color: #fff;
+  }
+} */
+
+/* ----------- Non-Retina Screens ----------- */
+/* @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+} */
+
+/* ----------- Retina Screens ----------- */
+/* @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
+  .carousel {
+    height: 38rem;
+  }
+}  */
