@@ -975,12 +975,12 @@ ul.slick-dots {
 }
 
 #myCarousel .carousel-image img {
-  height: 300px;
+  height: 380px;
 }
 
 #subCarousel img {
   height: auto !important;
-  max-height: 300px !important;
+  max-height: 380px !important;
 }
 
 @media (min-width: 992px) {
@@ -1275,86 +1275,16 @@ ul.slick-dots {
   }
 }
 
-/* ----------- iPhone 5, 5S, 5C and 5SE -----------
-
-/* Portrait */
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .carousel {
-    height: 28rem;
+@media screen and (min-width: 992px) and (max-width: 1439px) {
+  #myCarousel .carousel-image img {
+    height: 280px;
   }
-} */
 
-/* Landscape */
-/* @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .carousel {
-    height: 42rem;
+  .caption-fw h2 {
+    max-width: 500px;
   }
-} */
 
-/**iPhone 6/7/8**/
-
-/* Portrait */
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-  .carousel {
-    height: 30rem;
+  .caption-fw p {
+    max-width: 500px;
   }
-} */
-
-/* Landscape */
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape) {
-  .carousel {
-    height: 36rem;
-  }
-} */
-
-/**iPhone 6/7/8 Plus**/
-
-/* Portrait */
-/* @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  .carousel {
-    height: 32rem !important;
-  }
-} */
-
-/* Landscape */
-/* @media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .carousel {
-    height: 35rem !important;
-  }
-  .carousel-item img {
-    height: 88% !important;
-  }
-} */
-
-/** iPhone X landscape **/
-
-/* Portrait */
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait) {
-  .carousel {
-    height: 31rem;
-  }
-} */
-
-/* Landscape */
-/* @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape) {
-  .carousel {
-    height: 45rem !important;
-  }
-  .mobile-carousel-header {
-    color: #fff;
-  }
-  .mobile-carousel-text {
-    color: #fff;
-  }
-} */
-
-/* ----------- Non-Retina Screens ----------- */
-/* @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
-} */
-
-/* ----------- Retina Screens ----------- */
-/* @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
-  .carousel {
-    height: 38rem;
-  }
-}  */
+}
