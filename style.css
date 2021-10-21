@@ -948,6 +948,7 @@ vertical-align: middle;*/
 .slick-dots button {
   color: transparent;
   -webkit-appearance: none;
+  outline: 0 !important;
 }
 
 ul.slick-dots {
