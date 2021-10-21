@@ -1,5 +1,4 @@
 $(document).ready(function () {
-  const mainCarousel = $("#mainCarousel");
   const subCarousel = $("#subCarousel");
   const mainCarouselItems = $(".carousel-item");
   const indicators = $(".carousel-indicators > li");
@@ -15,26 +14,6 @@ $(document).ready(function () {
   mainCarouselItems.each((index, item) => {
     if ($(item).hasClass("active")) currentPageIndex = index;
   });
-
-  mainCarousel.on("init", (event, slick) => {
-    if ($(event.target).is("#mainCarousel")) {
-      const height = $(mainCarousel).height();
-      $(subCarousel)
-        .find(".slick-list, .slick-track, .slick-slide")
-        .height(height);
-    }
-  });
-
-  const mainCarouselOptions = {
-    autoplay: currentPageIndex === 0 ? false : true,
-    autoplaySpeed: 5000,
-    prevArrow:
-      '<button type="button" class="slick-prev carousel-control-prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span></button>"',
-    nextArrow:
-      '<button type="button" class="slick-next carousel-control-next"><span class="carousel-control-next-icon" aria-hidden="true"></span></button>',
-    initialSlide: currentPageIndex,
-    draggable: false,
-  };
 
   const subCarouselOptions = {
     autoplay: currentPageIndex === 0 ? true : false,
@@ -93,48 +72,10 @@ $(document).ready(function () {
   //initialise carousels
   subCarousel.slick(subCarouselOptions);
 
-  mainCarousel.slick(mainCarouselOptions);
-
   productCarousel.slick(productCarouselOptions);
 
   $(window).on("resize", function () {
     subCarousel.slick("refresh");
-  });
-  indicators.on("click", (e) => {
-    userInteracted = true;
-    const targetSlide = $(e.target).data("slideTo");
-    mainCarousel.slick("slickGoTo", targetSlide);
-  });
-
-  mobileIndicators.on("click", (e) => {
-    userInteracted = true;
-    const targetSlide = $(e.target).data("slideTo");
-    mainCarousel.slick("slickGoTo", targetSlide);
-  });
-
-  $(".slick-next, .slick-prev").on("click", (e) => {
-    userInteracted = true;
-  });
-
-  mainCarousel.on("beforeChange", (event, slick, currentSlide, nextSlide) => {
-    if ($(event.target).is("#mainCarousel")) {
-      highlightIndicator(nextSlide);
-      if (nextSlide === 0) {
-        const height = $(mainCarousel).height();
-        $(subCarousel)
-          .find(".slick-list, .slick-track, .slick-slide")
-          .height(height);
-        mainCarousel.slick("slickPause");
-        subCarousel.slick("slickPlay");
-      } else {
-        if (userInteracted) {
-          mainCarousel.slick("slickPause");
-        } else {
-          mainCarousel.slick("slickPlay");
-          subCarousel.slick("slickPause");
-        }
-      }
-    }
   });
 
   const highlightIndicator = (current) => {
@@ -157,12 +98,12 @@ $(document).ready(function () {
       subCarousel.slick("refresh");
       myCarousel.carousel('pause');
     } else {
-      myCarousel.carousel('pause');
-      // myCarousel.carousel('cycle');
+      // myCarousel.carousel('pause');
+      myCarousel.carousel('cycle');
     }
   })
 
   myCarousel.carousel({
-    // interval: 5000,
+    interval: 5000,
   })
 });
