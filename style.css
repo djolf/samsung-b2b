@@ -151,6 +151,11 @@ vertical-align: middle;*/
   height: auto;
   text-indent: unset;
 }
+
+.carousel-indicators li a {
+  color: #fff;
+}
+
 .carousel {
   margin-bottom: 0;
   padding-bottom: 4rem;
@@ -361,6 +366,7 @@ vertical-align: middle;*/
 .biz-title-h3 {
   color: #fff;
   font-family: "SamsungSharpSans", "SamsungSharpSans-Regular";
+  font-size: 34px;
   line-height: 34px;
 }
 .biz-title-h4 {
@@ -397,13 +403,15 @@ vertical-align: middle;*/
 .fieldworkers {
   position: relative;
   text-align: center;
+  margin-top: 34px;
 }
 
 .fw-title {
   font-family: "SamsungSharpSans", "SamsungSharpSans-Regular", Arial, Helvetica,
     sans-serif;
   color: black !important;
-  font-size: 1.8rem;
+  font-size: 34px;
+  margin-top: 34px;
 }
 
 .fw-centered {
@@ -550,6 +558,7 @@ vertical-align: middle;*/
   font-family: "SamsungSharpSans", "SamsungSharpSans-Regular";
   text-align: center;
   color: black;
+  font-size: 34px;
 }
 
 /*** border for glance icons ****/
@@ -903,6 +912,10 @@ vertical-align: middle;*/
   flex-direction: column;
 }
 
+#productCarousel .product-slide img {
+  max-width: 100%;
+}
+
 #productCarousel .product-name {
   color: white;
   font-size: 1.3rem;
@@ -929,6 +942,7 @@ vertical-align: middle;*/
   height: 4px;
   flex: 1;
   outline: 0;
+  cursor: pointer;
 }
 
 .slick-dots button {
@@ -1174,14 +1188,12 @@ ul.slick-dots {
     font-size: 0.8rem;
   }
 
-  .fw-centered {
-    position: absolute;
-    top: 19% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%);
+  .fieldworkers {
+    margin-top: 1.3rem;
   }
+
   .fw-title {
-    font-size: 1rem;
+    font-size: 1.3rem;
   }
   .fw-centered p {
     font-size: 0.7rem;
