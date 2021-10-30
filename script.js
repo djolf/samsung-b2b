@@ -16,8 +16,8 @@ $(document).ready(function () {
   });
 
   const subCarouselOptions = {
-    autoplay: currentPageIndex === 0 ? true : false,
-    // autoplay: false,
+    // autoplay: currentPageIndex === 0 ? true : false,
+    autoplay: true,
     autoplaySpeed: 2000,
     draggable: false,
     arrows: false,
@@ -98,12 +98,14 @@ $(document).ready(function () {
       subCarousel.slick("refresh");
       myCarousel.carousel('pause');
     } else {
-      // myCarousel.carousel('pause');
-      myCarousel.carousel('cycle');
+      myCarousel.carousel('pause');
+      // myCarousel.carousel('cycle');
     }
   })
 
-  myCarousel.carousel({
-    interval: 5000,
-  })
+  // if (currentPageIndex === 0) {
+  //   myCarousel.carousel({
+  //     interval: 5000,
+  //   })
+  // }
 });
