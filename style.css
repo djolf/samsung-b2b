@@ -74,6 +74,7 @@
 .carousel-section {
   background-color: #000;
   position: relative;
+  z-index: 2;
 }
 .main-container {
   background-color: #fff;
@@ -88,7 +89,7 @@ vertical-align: middle;*/
   left: 50%;
 }
 .caption-fw h2 {
-  font-family: "SamsungSharpSans-Medium", "SamsungSharpSans-Regular", Arial,
+  font-family: "SamsungSharpSans", "SamsungSharpSans-Regular", Arial,
     Helvetica, sans-serif;
   color: #fff;
   font-size: 1.5rem;
@@ -371,7 +372,7 @@ vertical-align: middle;*/
 }
 .biz-title-h4 {
   color: #fff;
-  font-family: "SamsungSharpSans-Medium", "SamsungSharpSans-Regular";
+  font-family: "SamsungSharpSans", "SamsungSharpSans-Regular";
   font-size: 1.39rem;
   line-height: 1.8rem;
 }
@@ -403,7 +404,6 @@ vertical-align: middle;*/
 .fieldworkers {
   position: relative;
   text-align: center;
-  margin-top: 34px;
 }
 
 .fw-title {
@@ -920,12 +920,6 @@ ul.slick-dots {
   max-height: 380px !important;
 }
 
-@media (min-width: 992px) {
-  .centered-product {
-    font-size: 0.1.5rem;
-  }
-}
-
 /*iPad 1,2, Mini and Air */
 /* Landscape */
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
@@ -981,6 +975,10 @@ ul.slick-dots {
 
   #myCarousel .carousel-text {
     height: 180px;
+  }
+
+  .fieldworkers {
+    margin-top: 40px;
   }
 }
 
@@ -1083,7 +1081,8 @@ ul.slick-dots {
     font-size: 1.3rem;
   }
   .fw-centered p {
-    font-size: 0.7rem;
+    font-size: 0.875rem;
+    padding: 0 10px;
   }
 
   .carousel-indicators {
@@ -1132,6 +1131,10 @@ ul.slick-dots {
   }
   .mobile-tech-title {
     text-align: center;
+    font-size: 1.2rem;
+  }
+  .mobile-tech-para {
+    font-size: 1rem;
   }
   .image-biz {
     width: 80%;
@@ -1169,6 +1172,8 @@ ul.slick-dots {
   #subCarousel .slide-container {
     margin: auto !important;
   }
+
+
 }
 
 @media screen and (min-width: 992px) and (max-width: 1439px) {
@@ -1182,5 +1187,32 @@ ul.slick-dots {
 
   .caption-fw p {
     max-width: 500px;
+  }
+}
+
+@media (min-width: 992px) {
+  .centered-product {
+    font-size: 0.1.5rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .fw-centered {
+    top: 6% !important;
+  }
+
+  .fieldworkers img {
+    margin-top: -8rem;
+    z-index: 1;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .fw-title {
+    margin-top: 70px;
+  }
+
+  .fieldworkers img {
+    margin-top: 5rem;
   }
 }
